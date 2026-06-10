@@ -70,11 +70,11 @@ jmeter -n -t ./scripts/main_load_test.jmx -l ./results/output.jtl \
 
 ### Examples of CLI runlines: 
 
-  -- Basic command line for running the test. Download the folder and replace the FolderPath in following command line.
-jmeter -n -t "FolderPath\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "FolderPath\Assurity\Config\user.properties" -l "FolderPath\Assurity\Test_Results\Test_Results.jtl"
+  -- Basic command line for running the test. Download the folder and replace the [MainFolderPath] in following command line.
+jmeter -n -t "[MainFolderPath]\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "[MainFolderPath]\Assurity\Config\user.properties" -l "[MainFolderPath]\Assurity\Test_Results\Test_Results.jtl"
 
-  -- For absolute path use this commandline. Download the folder and replace the <FolderPath> in following command line.
-jmeter -n -t "<FolderPath>\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "<FolderPath>\Assurity\Config\user.properties" -l "<FolderPath>\Assurity\Test_Results\Test_Results.jtl" -e -o "<Folder>\Assurity\Test_Results\Test_Results_HTML" -Jthreads=5 -Jrampup=5 -Jduration=120 -JTPS=0.1
+  -- For absolute path use this commandline. Download the folder and replace the [MainFolderPath] in following command line.
+jmeter -n -t "[MainFolderPath]\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "[MainFolderPath]\Assurity\Config\user.properties" -l "[MainFolderPath]\Assurity\Test_Results\Test_Results.jtl" -e -o "<Folder>\Assurity\Test_Results\Test_Results_HTML" -Jthreads=5 -Jrampup=5 -Jduration=120 -JTPS=0.1
 
   -- For relative path use this commandline. Download the folder navigate to "..\apache-jmeter-4.0\bin" folder before running the following command line.
 jmeter -n -t "..\..\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "..\..\Assurity\Config\user.properties" -l "..\..\Assurity\Test_Results\Test_Results.jtl" -e -o "..\..\Assurity\Test_Results\Test_Results_HTML" -Jthreads=5 -Jrampup=5 -Jduration=60 -JTPS=0.167
@@ -86,7 +86,7 @@ del /q /f /s "..\..\Test_Results\*"
 📈 Perfomance Test Report
 
 ### How to Access Reports
-1. Navigate to the "<FolderPath>\Assurity\Test_Results\Test_Results_HTML".
+1. Navigate to the "[MainFolderPath]\Assurity\Test_Results\Test_Results_HTML".
 2. View html file for local graphic charts and breakdown matrices in any browser.
 3. Performance Report & observations from the last test execution run are as below.
  - Assumptions:
